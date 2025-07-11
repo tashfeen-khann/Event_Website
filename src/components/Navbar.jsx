@@ -1,8 +1,7 @@
-
-
 import logoo from '../assets/imgs/logoo.png';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom'; // Add this import
 
 const Navbar = () => {
   return (
@@ -10,13 +9,13 @@ const Navbar = () => {
       <div className="container">
         <div className="d-flex flex-column align-items-center w-100">
           {/* Logo */}
-          <a className="navbar-brand" href="/home">
+          <Link className="navbar-brand" to="/home">
             <img
               src={logoo}
               alt="TK Events Logo"
               style={{ width: '110px', height: '60px' }}
             />
-          </a>
+          </Link>
 
           {/* Toggler for mobile view */}
           <button
@@ -34,32 +33,31 @@ const Navbar = () => {
           {/* Navbar Links */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto gap-5">
-
               <li className="nav-item">
-                <a className="nav-link" href="/home">
+                <Link className="nav-link" to="/home">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/portfolio">
+                <Link className="nav-link" to="/portfolio">
                   Portfolio
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/lovenotes">
+                <Link className="nav-link" to="/lovenotes">
                   Love Notes
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
