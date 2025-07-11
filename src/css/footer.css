@@ -1,0 +1,67 @@
+.footer-container {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: #2b2b2b;
+}
+
+.footer-top {
+  margin-bottom: 2rem;
+}
+
+.footer-visit {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-instagram {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #4c6a55;
+  margin-bottom: 150px;
+  text-decoration: none; 
+}
+
+.footer-icons {
+  margin-bottom: 2rem;
+}
+
+.footer-icon {
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #4c6a55;
+}
+
+.footer-info {
+  font-size: 0.75rem;
+  color: #2b2b2b;
+}
+
+.footer-description {
+  margin-bottom: 1rem;
+}
+
+.footer-belief {
+  margin-bottom: 1rem;
+}
+
+.footer-copyright {
+  font-weight: bold;
+}
+
+/* Ensure images are responsive within the footer */
+.footer-image {
+  max-width: 100%;  /* Ensure the image does not exceed the container's width */
+  height: auto;     /* Maintain the image's aspect ratio */
+  margin-bottom: 1rem;
+}
+
+/* Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
